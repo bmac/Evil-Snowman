@@ -10,8 +10,8 @@ function trackClick (event) {
     var $originStar = $($(".star")[0]);
     var newStar = $originStar.clone();
     var $this = $(this);
-    newStar.css("top",$this.position.top);
-    newStar.css("left",$this.position.left);
+    newStar.css("top",$this.position().top);
+    newStar.css("left",$this.position().left);
     newStar.css("display","inline");
     newStar.addClass("approchHungry");
     newStar.bind('webkitAnimationEnd',
@@ -166,5 +166,6 @@ $(".link").click(trackClick);
 setInterval(function() {setLink("link1Animation");}, 5000);
 setInterval(function() {setLink("link2Animation");}, 3000);
 setInterval(function() {setLink("link3Animation");}, 7000);
-setInterval(function() {setLink("link4Animation");}, 2000);
+setInterval(function() {setLink("link4Animation");}, 4000);
+setInterval(function() {setLink("link5Animation");}, 3500);
 });

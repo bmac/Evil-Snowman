@@ -8,7 +8,7 @@ div.gameContainer {
     height: 400px;
     width: 400px;
     position: relative;
-
+    cursor: pointer;
 }
 
 .link a:visited{
@@ -41,11 +41,11 @@ div.gameContainer a{
 
 
 @-webkit-keyframes link1Animation {
-    0% { -webkit-transform: rotate(0); top:0px; }
-    25% { -webkit-transform: rotate(180deg); top:50px;}
-    50% { -webkit-transform: rotate(360deg); top:100px;}
-    75% { -webkit-transform: rotate(540deg); top:50px;}
-    100% { -webkit-transform:  rotate(720deg); top:0px;}
+    0% { -webkit-transform: rotate(0); top:0px; left: 20px;}
+    25% { -webkit-transform: rotate(180deg); top:100px; left: 40px;}
+    50% { -webkit-transform: rotate(360deg); top:200px; left: 60px;}
+    75% { -webkit-transform: rotate(540deg); top:100px; left: 40px;}
+    100% { -webkit-transform:  rotate(720deg); top:0px; left: 20px;}
 
 }
 
@@ -91,7 +91,7 @@ div.gameContainer a{
 @-webkit-keyframes link3Animation {
     0% { -webkit-transform: rotate(0deg); top:53px; left:100px; }
     20% { -webkit-transform: rotate(40deg); top:34px; left:400px}
-    40% { -webkit-transform: rotate(80deg); top:353px; left:763px}
+    40% { -webkit-transform: rotate(80deg); top:353px; left:263px}
     50% { -webkit-transform: rotate(100deg); top:200px; left:321px}
     60% { -webkit-transform: rotate(80deg); top:150px; left:300px}
     80% { -webkit-transform:  rotate(40deg); top:100px; left:20px}
@@ -103,7 +103,7 @@ div.gameContainer a{
     position: absolute;
     width: 50px;
     -webkit-transform-origin: center;
-    -webkit-animation: link3Animation 2s linear 0s infinite ;
+    -webkit-animation: link3Animation 4s linear 0s infinite ;
 }
 
 
@@ -130,20 +130,19 @@ div.gameContainer a{
 
 
 
-@-webkit-keyframes link2Animation {
-    0% { -webkit-transform: rotate(0deg); top:20px; left:200px; }
-    25% { -webkit-transform: rotate(20deg); top:80px; left:100px}
-    50% { -webkit-transform: rotate(0deg); top:200px; left:120px}
-    75% { -webkit-transform: rotate(-20deg); top:80px; left:160px}
-    100% { -webkit-transform:  rotate(0deg); top:20px; left:200px}
-
+@-webkit-keyframes link5Animation {
+    0% { -webkit-transform: rotate(0deg); top:80px; left:200px; }
+    25% { -webkit-transform: rotate(20deg); top:160px; left:300px}
+    50% { -webkit-transform: rotate(0deg); top:200px; left:400px}
+    75% { -webkit-transform: rotate(-20deg); top:80px; left:300px}
+    100% { -webkit-transform:  rotate(0deg); top:20px; left:100px}
 }
 
-#link2Animation {
+#link5Animation {
     position: absolute;
     width: 50px;
     -webkit-transform-origin: center;
-    -webkit-animation: link2Animation 5s linear 0s infinite ;
+    -webkit-animation: link5Animation 5s linear 0s infinite ;
 }
 
 
@@ -160,7 +159,3 @@ div.gameContainer a{
 /* .rotate { */
 /*     -webkit-animation: rotate1 .5s linear 0s infinite; */
 /* } */
-
-.link2 {
-    
-}
