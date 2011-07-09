@@ -11,7 +11,7 @@ div.gameContainer {
 
 }
 
-div.gameContainer a:visited{
+.link a:visited{
     color: red;
     background-color: green;
     outline-color: green;
@@ -68,6 +68,66 @@ div.gameContainer a{
     -webkit-animation: link1Animation 3s linear 0s infinite ;
     /* -webkit-animation: rotate1 1s linear 0s infinite; */
 }
+
+
+@-webkit-keyframes link2Animation {
+    0% { -webkit-transform: rotate(0deg); top:20px; left:200px; }
+    25% { -webkit-transform: rotate(20deg); top:80px; left:100px}
+    50% { -webkit-transform: rotate(0deg); top:200px; left:120px}
+    75% { -webkit-transform: rotate(-20deg); top:80px; left:160px}
+    100% { -webkit-transform:  rotate(0deg); top:20px; left:200px}
+
+}
+
+#link2Animation {
+    position: absolute;
+    width: 50px;
+    -webkit-transform-origin: center;
+    -webkit-animation: link2Animation 5s linear 0s infinite ;
+}
+
+
+
+@-webkit-keyframes link3Animation {
+    0% { -webkit-transform: rotate(0deg); top:53px; left:100px; }
+    20% { -webkit-transform: rotate(40deg); top:34px; left:400px}
+    40% { -webkit-transform: rotate(80deg); top:353px; left:763px}
+    50% { -webkit-transform: rotate(100deg); top:200px; left:321px}
+    60% { -webkit-transform: rotate(80deg); top:150px; left:300px}
+    80% { -webkit-transform:  rotate(40deg); top:100px; left:20px}
+    100% { -webkit-transform:  rotate(0deg); top:53px; left:100px}
+
+}
+
+#link3Animation {
+    position: absolute;
+    width: 50px;
+    -webkit-transform-origin: center;
+    -webkit-animation: link3Animation 2s linear 0s infinite ;
+}
+
+
+
+@-webkit-keyframes link4Animation {
+    0% { -webkit-transform: rotate(0deg); top:400px; left:400px; }
+    12.5% { -webkit-transform: rotate(90deg); }
+    25% { -webkit-transform: rotate(180deg); top:400px; left:0px}
+    37.5% { -webkit-transform: rotate(90deg); }
+    50% { -webkit-transform: rotate(0deg); top:0px; left:0px}
+    62.5% { -webkit-transform: rotate(-90deg); }
+    75% { -webkit-transform: rotate(-180deg); top:0px; left:400px}
+    87.5% { -webkit-transform: rotate(-90deg); }
+    100% { -webkit-transform:  rotate(0deg); top:400px; left:400px}
+
+}
+
+#link4Animation {
+    position: absolute;
+    width: 50px;
+    -webkit-transform-origin: center;
+    -webkit-animation: link4Animation 7s linear 0s infinite ;
+}
+
 
 
 @-webkit-keyframes link2Animation {
