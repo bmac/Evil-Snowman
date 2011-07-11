@@ -2,9 +2,6 @@
 
  */
 
-
-
-
 function trackClick (event) {
     event.preventDefault();
     var $originStar = $($(".star")[0]);
@@ -24,7 +21,7 @@ function trackClick (event) {
     var href = $this.children().first().attr("href");
     $("#visitedLinks").children().last().after("<div><a href=''>"+href+"</a></div>");
     $this.replaceWith(newStar);
-    newStar.animate({"top": "-80", left: "200"}, 800, growHungry);
+    newStar.animate({"top": "-120", left: "200"}, 800, growHungry);
 }
 
 function growHungry(){
@@ -42,7 +39,6 @@ function setLink(id){
     }
 
     link.children().first().attr("href", href);
-    console.log($("#"+id).children().first().attr("href"));
 }
 
 function createNewLink(id){
@@ -52,6 +48,23 @@ function createNewLink(id){
     return newLink;
 }
 
+function minusOne() {
+    var $badge = $("#Badge"); 
+    var value =  parseInt($badge.html()) - 1;
+    if (value === 0){
+	gameOver();
+    }
+    if (value > 0 ){
+	setTimeout(minusOne, 1000);
+    }
+    $badge.html(value);
+}
+
+
+function gameOver() {
+    $("#gameOver").removeClass("hidden");
+    $("#gameContainer").addClass("hidden");
+}
 
 var bmac = {};
 bmac.hungrySize = 300;
@@ -168,4 +181,6 @@ setInterval(function() {setLink("link2Animation");}, 3000);
 setInterval(function() {setLink("link3Animation");}, 7000);
 setInterval(function() {setLink("link4Animation");}, 4000);
 setInterval(function() {setLink("link5Animation");}, 3500);
+			setTimeout(minusOne, 1000);
 });
+
