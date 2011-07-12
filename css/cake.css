@@ -1,5 +1,6 @@
 header {
     text-align: center;
+    padding: 15px;
 }
 
 h1 {
@@ -209,9 +210,3 @@ div.gameContainer a{
 	{ font-size:18px; }
 .badger-number
 	{ font-size:22px; }
-
-
-
-/* .rotate { */
-/*     -webkit-animation: rotate1 .5s linear 0s infinite; */
-/* } */
