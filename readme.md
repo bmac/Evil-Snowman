@@ -2,6 +2,6 @@
 
  * There is a blog with more info at [http://laconicwit.com/post/7521781286/history-sniffing-for-fun-and-profit](http://laconicwit.com/post/7521781286/history-sniffing-for-fun-and-profit)
 
-* To test it visit [http://bmac.github.com/Evil-Snowman/](http://bmac.github.com/Evil-Snowman/)
+ * To test it visit [http://bmac.github.com/Evil-Snowman/](http://bmac.github.com/Evil-Snowman/)
 
 License: MIT [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
